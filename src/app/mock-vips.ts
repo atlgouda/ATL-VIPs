@@ -10,5 +10,6 @@ export const VIPS: Vip[] = [
     { "id": 7, "name": "Martin Luther King", "occupation": "leader" },
     { "id": 8, "name": "John Lewis", "occupation": "leader" },
     { "id": 9, "name": "Maynard Jackson", "occupation": "leader" },
-    { "id": 10, "name": "Keisha Lance Bottoms", "occupation": "leader" }
+    { "id": 10, "name": "Keisha Lance Bottoms", "occupation": "leader" },
+    { "id": 11, "name": "Outkast", "occupation": "musician"}
 ]
