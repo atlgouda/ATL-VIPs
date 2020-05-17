@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { VipsComponent } from './vips/vips.component';
 import { FormsModule } from '@angular/forms';
 import { VipDetailComponent } from './vip-detail/vip-detail.component';
+import { AthleteComponent } from './athlete/athlete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VipsComponent,
-    VipDetailComponent
+    VipDetailComponent,
+    AthleteComponent
   ],
   imports: [
     BrowserModule,
