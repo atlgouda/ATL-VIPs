@@ -17,6 +17,8 @@ export class VipsComponent implements OnInit {
   // }
   vips = VIPS;
 
+  selectedVip: Vip;
+
   constructor() { }
 
   ngOnInit(): void {

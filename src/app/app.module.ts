@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VipsComponent } from './vips/vips.component';
 import { FormsModule } from '@angular/forms';
+import { VipDetailComponent } from './vip-detail/vip-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    VipsComponent
+    VipsComponent,
+    VipDetailComponent
   ],
   imports: [
     BrowserModule,
