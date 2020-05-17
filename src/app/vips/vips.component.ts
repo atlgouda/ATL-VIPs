@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Vip } from '../vip';
-import { VIPS } from '../mock-vips';
+import { VipService } from '../vip.service';
 
 @Component({
   selector: 'app-vips',
@@ -15,15 +15,21 @@ export class VipsComponent implements OnInit {
   //   reason: 'Home Run King',
   //   born: 1934
   // }
-  vips = VIPS;
+  vips: Vip[];
 
   selectedVip: Vip;
 
-  constructor() { }
+  constructor(private vipService: VipService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getVips();
   }
   onSelect(vip: Vip): void {
     this.selectedVip = vip;
+  }
+
+  getVips(): void {
+    this.vipService.getVips()
+      .subscribe(vips => this.vips = vips);
   }
 }
