@@ -1,4 +1,4 @@
-<h2>
+<!-- <h2>
     <div>
         <label>
             <input [(ngModel)]="vip.name" placeholder="name"/>
@@ -9,4 +9,22 @@
 <div><span>Name: </span>{{vip.name}}</div>
 <div><span>Occupation: </span>{{vip.occupation}}</div>
 <div><span>Claim to Fame: </span>{{vip.reason}}</div>
-<div><span>Born: </span>{{vip.born}}</div>
+<div><span>Born: </span>{{vip.born}}</div> -->
+<h2>ATL VIPs</h2>
+<ul class="vips">
+  <li *ngFor="let vip of vips" 
+  [class.selected]="vip === selectedVip"
+  (click)="onSelect(vip)">
+    <span class="badge">{{vip.id}}</span> {{vip.name}}
+  </li>
+</ul>
+<div *ngIf="selectedVip">
+    <h2>{{selectedVip.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedVip.id}}</div>
+    <div>
+    <label>Name:
+        <input [(ngModel)]="selectedVip.name" placeholder="name"/>
+    </label>
+    </div>
+    <div><span>Occupation: </span>{{selectedVip.occupation}}</div>
+</div>
