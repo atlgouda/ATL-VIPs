@@ -8,13 +8,7 @@ import { VipService } from '../vip.service';
   styleUrls: ['./vips.component.css']
 })
 export class VipsComponent implements OnInit {
-  // vip: Vip = {
-  //   id: 1,
-  //   name: 'Hank Aaron',
-  //   occupation: 'athlete', 
-  //   reason: 'Home Run King',
-  //   born: 1934
-  // }
+
   vips: Vip[];
 
   selectedVip: Vip;
@@ -23,9 +17,6 @@ export class VipsComponent implements OnInit {
 
   ngOnInit() {
     this.getVips();
-  }
-  onSelect(vip: Vip): void {
-    this.selectedVip = vip;
   }
 
   getVips(): void {

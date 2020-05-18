@@ -1,11 +1,24 @@
-<div *ngIf="vip">
+<!-- <div *ngIf="vip" > -->
 
-    <h2>{{vip.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{vip.id}}</div>
+    <!-- <h2 id="vipName">{{vip.name | uppercase}}</h2>
     <div>
+
         <label>Name:
             <input [(ngModel)]="vip.name" placeholder="name"/>
         </label>
     </div>
     <div><span>Occupation: </span>{{vip.occupation}}</div>
-</div>
+    <div><span>Born: </span>{{vip.born}}</div>
+    <div><span>Accomplishments: </span>{{vip.reason}}</div>
+    <img src="{{vip.yt}}">{{vip.yt}} -->
+    <div id="topps61" class="cardRow">
+            <div class="card">
+              <div class="photo" style="background:url({{vip.yt}})"></div>    
+              <div class="name">{{vip.name}}<BR><span style="color:yellow;font-size:10px;line-height:10px;">{{vip.reason}}</span></div>
+              <div class="name2">{{vip.detail}}</div>
+              <div class="shine"></div>
+            </div>
+            <!-- <span class="series"><br><br>1961 Topps</span> -->
+          </div>
+<!-- </div> -->
+

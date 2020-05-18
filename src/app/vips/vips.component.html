@@ -12,14 +12,14 @@
 <div><span>Born: </span>{{vip.born}}</div> -->
 <h2>ATL VIPs</h2>
 <ul class="vips">
-  <li *ngFor="let vip of vips" 
-  [class.selected]="vip === selectedVip"
-  (click)="onSelect(vip)">
-    <span class="badge">{{vip.id}}</span> {{vip.name}}
+  <li *ngFor="let vip of vips">
+    <a routerLink="/detail/{{vip.id}}">
+        <span class="badge">{{vip.id}}</span> {{vip.name}}
+    </a>
   </li>
 </ul>
 
-<app-vip-detail [vip]= "selectedVip"></app-vip-detail>
+<!-- <app-vip-detail [vip]= "selectedVip"></app-vip-detail> -->
 <!-- <div *ngIf="selectedVip">
     <h2>{{selectedVip.name | uppercase}} Details</h2>
     <div><span>id: </span>{{selectedVip.id}}</div>

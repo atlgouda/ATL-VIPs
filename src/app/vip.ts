@@ -4,4 +4,5 @@ export interface Vip {
     occupation: string;
     reason: string;
     born: number;
+    yt: string;
 }

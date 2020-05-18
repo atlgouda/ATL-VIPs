@@ -12,4 +12,7 @@ export class VipService {
   getVips(): Observable<Vip[]> {
     return of(VIPS);
   }
+  getVip(id: number): Observable<Vip> {
+    return of(VIPS.find(vip => vip.id === id));
+  }
 }
