@@ -3,16 +3,16 @@ import { Vip } from '../vip'
 import {VipService } from '../vip.service'
 import { VIPS } from '../mock-vips';
 
-var athleteArray = VIPS.filter(function (vip) {
-  return vip.occupation === "athlete"
+var businessArray = VIPS.filter(function (vip) {
+  return vip.occupation === "business"
 })
 
 @Component({
-  selector: 'app-athlete',
-  templateUrl: './athlete.component.html',
-  styleUrls: ['./athlete.component.css']
+  selector: 'app-business',
+  templateUrl: './business.component.html',
+  styleUrls: ['./business.component.css']
 })
-export class AthleteComponent implements OnInit {
+export class BusinessComponent implements OnInit {
   vips: Vip[] = [];
 
   constructor(private vipService: VipService) { }
@@ -23,6 +23,6 @@ export class AthleteComponent implements OnInit {
 
   getVips(): void {
     this.vipService.getVips()
-      .subscribe(vips => this.vips = athleteArray);
+      .subscribe(vips => this.vips = businessArray);
   }
 }

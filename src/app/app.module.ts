@@ -7,13 +7,21 @@ import { VipsComponent } from './vips/vips.component';
 import { FormsModule } from '@angular/forms';
 import { VipDetailComponent } from './vip-detail/vip-detail.component';
 import { AthleteComponent } from './athlete/athlete.component';
+import { MusicianComponent } from './musician/musician.component';
+import { ActorComponent } from './actor/actor.component';
+import { BusinessComponent } from './business/business.component';
+import { LeaderComponent } from './leader/leader.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     VipsComponent,
     VipDetailComponent,
-    AthleteComponent
+    AthleteComponent,
+    MusicianComponent,
+    ActorComponent,
+    BusinessComponent,
+    LeaderComponent
   ],
   imports: [
     BrowserModule,

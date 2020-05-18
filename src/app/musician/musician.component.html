@@ -1,0 +1,8 @@
+<h3>Musicians</h3>
+
+  <a *ngFor="let vip of vips" class="col-1-4"
+    routerLink="/detail/{{vip.id}}">
+    <div class="module vip">
+      <h4>{{vip.name}}</h4>
+    </div>
+  </a>
