@@ -60,3 +60,7 @@
       min-width: 60px;
     }
   }
+  .page {
+    font-family: Arial, Helvetica, sans-serif !important;
+    text-align: center;
+}
