@@ -11,7 +11,7 @@ body {
   margin:0;
 }
 
-.cardRow {
+#topps61 .cardRow {
   position:relative;
   width:100%;
   overflow:hidden;
@@ -19,10 +19,10 @@ body {
   /* outline:2px solid black; */
   text-align:center;
   padding:100px 0px;
-  display:inline-block;
+
 }
 
-.cardRow:nth-child(even) {
+#topps61 .cardRow:nth-child(even) {
 /*   background:dodgerblue; */
 }
 
@@ -30,7 +30,7 @@ body {
   
 }
 
-.card {
+#topps61 .card {
  width:250px;
   height:350px;
   /* outline:1px solid black; */
@@ -93,7 +93,7 @@ body {
     right:10px;
     bottom:10px;
   }
-  .shine {
+  #topps61 .shine {
     width:100%;
     height:100%;
     background:linear-gradient(45deg, transparent 40%, rgba(255,255,255,1) 50%, transparent 60%);
@@ -106,20 +106,19 @@ body {
     z-index:9;
   }
   
-  .card:hover {
+  #topps61 .card:hover {
     transform:rotateX(0deg) rotateZ(0deg);
     box-shadow:-5px 20px 5px rgba(0,0,0,.1);
     opacity:1;
   }
   
-  .card:hover > .shine {
+  #topps61 .card:hover > .shine {
     animation:shine 1.5s linear forwards;
     opacity:.5;
   }
   
-  @keyframes shine {
+  #topps61 @keyframes shine {
     100% { background-position:0% 0%; opacity:0; }
   }
-  
   
   /* topps 61 */

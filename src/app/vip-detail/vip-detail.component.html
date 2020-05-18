@@ -11,12 +11,12 @@
     <div><span>Born: </span>{{vip.born}}</div>
     <div><span>Accomplishments: </span>{{vip.reason}}</div>
     <img src="{{vip.yt}}">{{vip.yt}} -->
-    <div id="topps61" class="cardRow">
+    <div id="{{vip.type}}" class="cardRow" style="display: flex; justify-content: center">
             <div class="card">
               <div class="photo" style="background:url({{vip.yt}})"></div>    
               <div class="name">{{vip.name}}<BR><span style="color:yellow;font-size:10px;line-height:10px;">{{vip.reason}}</span></div>
               <div class="name2">{{vip.detail}}</div>
-              <div class="shine"></div>
+              <!-- <div class="shine" id="{{vip.type}}"></div> -->
             </div>
             <!-- <span class="series"><br><br>1961 Topps</span> -->
           </div>

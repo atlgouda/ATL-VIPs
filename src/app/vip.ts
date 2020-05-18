@@ -6,4 +6,5 @@ export interface Vip {
     born: number;
     detail: string;
     yt: string;
+    type: string;
 }
