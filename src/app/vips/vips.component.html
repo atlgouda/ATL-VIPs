@@ -1,16 +1,27 @@
-<!-- <h2>
-    <div>
-        <label>
-            <input [(ngModel)]="vip.name" placeholder="name"/>
-        </label>
-    </div>
-</h2>
-<div><span>ID: </span>{{vip.id}}</div>
-<div><span>Name: </span>{{vip.name}}</div>
-<div><span>Occupation: </span>{{vip.occupation}}</div>
-<div><span>Claim to Fame: </span>{{vip.reason}}</div>
-<div><span>Born: </span>{{vip.born}}</div> -->
+
 <div class="page" style="background-color: #CCCCCC; padding-top: 20px">
+    <div>
+        <h4>Add VIP</h4>
+        <label>Name:
+            <input #vipName />
+        </label>
+        <label>Display:
+            <select>
+                <option #vipType value="topps61">topps61</option>
+            </select>
+        </label>
+        <label>Team or Profession:
+                <input #vipDetail />
+        </label><br><br>
+        <label>Accomplishment:
+                <input #vipReason />
+        </label>
+        <label>Image/gif URL:
+                <input #vipYt />
+        </label>
+        <button (click)="add(vipName.value, vipType.value, vipDetail.value, vipReason.value, vipYt.value); 
+        vipName.value=''; vipType.value=''; vipDetail.value=''; vipReason.value=''; vipYt.value=''">Add VIP</button>
+    </div>
     <div class="vipList" style="background-color: #CCCCCC; display: flex;padding-top: 20px; border-rad; margin: 0 auto;">
         <ul class="vips" style="height: 100%;max-width: 400px; width: 60vw; margin-left: auto; margin-right: auto; background-color:#CCCCCC; flex-direction: column; display: flex;">
         <li *ngFor="let vip of vips" style="max-width: 400px">
@@ -20,16 +31,5 @@
         </li>
         </ul>
     </div>
-</div>
 
-<!-- <app-vip-detail [vip]= "selectedVip"></app-vip-detail> -->
-<!-- <div *ngIf="selectedVip">
-    <h2>{{selectedVip.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{selectedVip.id}}</div>
-    <div>
-    <label>Name:
-        <input [(ngModel)]="selectedVip.name" placeholder="name"/>
-    </label>
-    </div>
-    <div><span>Occupation: </span>{{selectedVip.occupation}}</div>
-</div> -->
+</div>

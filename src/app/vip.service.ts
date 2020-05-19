@@ -9,6 +9,11 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class VipService {
   private vipsUrl = 'api/vips';  // URL to web api
+  
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+  
   constructor(private http: HttpClient) { }
   getVips(): Observable<Vip[]> {
     return this.http.get<Vip[]>(this.vipsUrl);
@@ -16,5 +21,9 @@ export class VipService {
   getVip(id: number): Observable<Vip> {
     const url = `${this.vipsUrl}/${id}`;
     return this.http.get<Vip>(url);
+  }
+  /** POST: add a new vip to the server */
+  addVip(vip: Vip): Observable<Vip> {
+    return this.http.post<Vip>(this.vipsUrl, vip, this.httpOptions)
   }
 }

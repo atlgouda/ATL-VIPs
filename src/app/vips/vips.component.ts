@@ -23,4 +23,17 @@ export class VipsComponent implements OnInit {
     this.vipService.getVips()
       .subscribe(vips => this.vips = vips);
   }
+  add(name: string, type: string, detail: string, reason: string, yt:string): void {
+    name = name.trim();
+    type = type.trim();
+    detail = detail.trim();
+    reason = reason.trim();
+    yt = yt.trim();
+    if (!name) { return; }
+    this.vipService.addVip({ name, type, detail, reason, yt } as Vip)
+      .subscribe(vip => {
+        this.vips.push(vip);
+      });
+
+  }
 }

@@ -19,6 +19,9 @@
     background-color: #DDD;
     left: .1em;
   }
+  label {
+    padding: 5px;
+  }
   
   .vips a {
     color: #333;
