@@ -21,7 +21,16 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/android-chrome-192x192.png",
+              "src/android-chrome-512x512.png",
+              "src/apple-touch-icon.png",
+              "src/browserconfig.xml",
+              "src/favicon-16x16.png",
+              "src/favicon-32x32.png",
+              "src/mstile-150x150.png",
+              "src/safari-pinned-tab.svg",
+              "src/site.webmanifest"
             ],
             "styles": [
               "src/styles.css"
@@ -117,8 +126,17 @@
               "devServerTarget": "ang-app:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/ang-app",
+            "netlifyToken": "8b41f46994dd2b9a78fd478e5cb73d3e7155cf97debf741bcc8704bf86aa5cce",
+            "siteId": "568cb206-ac1d-467c-9e99-547a59462b0c"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ang-app"
 }
