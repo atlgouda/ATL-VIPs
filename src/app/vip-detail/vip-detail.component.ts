@@ -10,7 +10,7 @@ import { VipService }  from '../vip.service';
   styleUrls: ['./vip-detail.component.css']
 })
 export class VipDetailComponent implements OnInit {
-  @Input() vip: Vip;
+  vip: Vip;
 
   constructor(
     private route: ActivatedRoute,
@@ -19,13 +19,12 @@ export class VipDetailComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getVipYt();
+    this.getVip();
   }
-  getVipYt() {
+  getVip() {
     const id = +this.route.snapshot.paramMap.get('id');
     this.vipService.getVip(id)
       .subscribe(vip => this.vip = vip);
-      return(this.vip.yt)
   }
 
 
