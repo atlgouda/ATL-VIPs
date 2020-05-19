@@ -42,6 +42,14 @@ body {
   transform:rotateX(45deg) rotateZ(-35deg);
   opacity:1;  
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #topps61 .card {
+        transition:0s;
+        transform: none;
+    }
+  }
 /* topps 61 */
 
 #topps61 .card {
