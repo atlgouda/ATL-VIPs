@@ -59,3 +59,8 @@ input {
 #addBtn {
     cursor: pointer;
 }
+
+
+a {
+    text-decoration: none;
+}
