@@ -10,6 +10,7 @@ import { VipsComponent } from './vips/vips.component';
 import { FormsModule } from '@angular/forms';
 import { VipDetailComponent } from './vip-detail/vip-detail.component';
 import { CategoryComponent } from './category/category.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { CategoryComponent } from './category/category.component';
       InMemoryDataService, { dataEncapsulation: false }
     )
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
