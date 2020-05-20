@@ -4,7 +4,7 @@ import {VipService } from '../vip.service'
 import { VIPS } from '../mock-vips';
 
 var athleteArray = VIPS.filter(function (vip) {
-  return vip.occupation === "athlete"
+  return vip.occupation.includes("athlete") === true
 })
 
 @Component({

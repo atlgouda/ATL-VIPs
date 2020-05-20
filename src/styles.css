@@ -61,3 +61,9 @@ input {
     padding: 1px 0 10px 0;
     border-radius: 15px;
 }
+
+.sortedVip {
+    display:flex;
+    justify-content: center;
+    min-width: 150px;
+}

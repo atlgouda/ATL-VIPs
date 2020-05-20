@@ -148,7 +148,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
           "id": 15,
           "name": "Ludacris",
-          "occupation": "musician",
+          "occupation": "musician actor",
           "type": "topps61",
           "detail": "Rapper / Actor",
           "born": 1977,
@@ -178,7 +178,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
           "id": 18,
           "name": "Donald Glover",
-          "occupation": "actor",
+          "occupation": "musician actor",
           "type": "topps61",
           "detail": "Actor / Rapper",
           "born": 1983,
@@ -188,7 +188,7 @@ export class InMemoryDataService implements InMemoryDbService {
       {
           "id": 19,
           "name": "Tyler Perry",
-          "occupation": "actor",
+          "occupation": "actor business",
           "type": "topps61",
           "detail": "Actor / Businessman",
           "born": 1969,
