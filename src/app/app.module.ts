@@ -14,6 +14,7 @@ import { MusicianComponent } from './musician/musician.component';
 import { ActorComponent } from './actor/actor.component';
 import { BusinessComponent } from './business/business.component';
 import { LeaderComponent } from './leader/leader.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LeaderComponent } from './leader/leader.component';
     ActorComponent,
     BusinessComponent,
     LeaderComponent,
+    CategoryComponent,
 
   ],
   imports: [

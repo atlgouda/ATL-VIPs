@@ -23,6 +23,7 @@ export class VipDetailComponent implements OnInit {
   }
   getVip() {
     const id = +this.route.snapshot.paramMap.get('id');
+    console.log(id)
     this.vipService.getVip(id)
       .subscribe(vip => this.vip = vip);
   }
