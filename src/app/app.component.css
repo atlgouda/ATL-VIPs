@@ -50,4 +50,7 @@ h1 {
       justify-content: center;
 
   }
-  
+
+  .page{
+      padding-left: 0 !important
+  }

@@ -5,11 +5,11 @@
         <label>Name:
             <input #vipName />
         </label>
-        <label>Display:
-            <select>
+
+            <select style="display: none;">
                 <option #vipType value="topps61">topps61</option>
             </select>
-        </label>
+
         <label>Team or Profession:
                 <input #vipDetail />
         </label><br><br>
@@ -20,7 +20,7 @@
                 <input #vipYt />
         </label>
         <button (click)="add(vipName.value, vipType.value, vipDetail.value, vipReason.value, vipYt.value); 
-        vipName.value=''; vipType.value=''; vipDetail.value=''; vipReason.value=''; vipYt.value=''">Add VIP</button>
+        vipName.value=''; vipType.value='topps61'; vipDetail.value=''; vipReason.value=''; vipYt.value=''">Add VIP</button>
     </div>
     <div class="vipList" style="background-color: #CCCCCC; display: flex;padding-top: 20px; border-rad; margin: 0 auto;">
         <ul class="vips" style="height: 100%;max-width: 400px; width: 60vw; margin-left: auto; margin-right: auto; background-color:#CCCCCC; flex-direction: column; display: flex;">

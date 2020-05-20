@@ -2,3 +2,50 @@
 body {
     margin:0
 }
+
+.module {
+    /* display: table;
+    height: 80px;
+    width: 100px */
+    /* height;  */
+    display: table;
+    padding: 20px;
+    text-align: center;
+    color: #eee;
+    max-height: 120px;
+    /* min-width: 120px; */
+    background-color: #3f525c;
+    border-radius: 2px;
+    margin-bottom: 20px
+
+}
+
+.module h4 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .module {
+        width: 33px;
+        height: 61px;
+    }
+} */
+
+@media (max-width: 1024px){
+    .module {
+        height: 80px;
+        width: 120px;
+    }
+}
+
+.sorted {
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.col-1-4 {
+    margin: 0 20px
+}
