@@ -49,3 +49,15 @@ body {
 .col-1-4 {
     margin: 0 20px
 }
+
+input {
+    margin-bottom: 5px
+}
+
+.addDiv {
+    background-color: #eaaeae;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1px 0 10px 0;
+    border-radius: 15px;
+}
