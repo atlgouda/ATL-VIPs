@@ -15,25 +15,14 @@ body {
   position:relative;
   width:100%;
   overflow:hidden;
-  /* background:tomato; */
-  /* outline:2px solid black; */
   text-align:center;
   padding:100px 0px;
 
 }
 
-#topps61 .cardRow:nth-child(even) {
-/*   background:dodgerblue; */
-}
-
-.series {
-  
-}
-
 #topps61 .card {
  width:250px;
   height:350px;
-  /* outline:1px solid black; */
   background:LemonChiffon;
   position:relative; 
   display:inline-block;
@@ -57,7 +46,6 @@ body {
   }
   
   #topps61 .photo {
-    /* background:url('https://media.giphy.com/media/Qz5r099JNdDnwxI5UA/giphy.gif'); */
     background-size:cover !important;
     background-position:45% 0% !important;
     height:330px;
@@ -66,7 +54,6 @@ body {
     left:10px;
     outline:3px solid black;
     filter:saturate(.75) !important;
-  /*   z-index:8; */
   }
   
   #topps61 .name {

@@ -4,7 +4,7 @@ export const VIPS: Vip[] = [
     { 
       "id": 1, 
       "name": "Gouda Clark", 
-      "occupation": "", 
+      "occupation": "business", 
       "type": "topps61",
       "detail": "Atlanta",
       "born": 1984,
