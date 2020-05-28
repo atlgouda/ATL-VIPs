@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Vip } from '../vip';
+import { Vip } from '../vips/vip';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { VipService }  from '../vip.service';
+import { VipService }  from '../vips/vips.service';
 
 @Component({
   selector: 'app-vip-detail',

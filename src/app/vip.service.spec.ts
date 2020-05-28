@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { VipService } from './vip.service';
+import { VipService } from './vips/vips.service';
 
 describe('VipService', () => {
   let service: VipService;

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Vip } from '../vip';
-import { VipService } from '../vip.service';
+import { Vip } from './vip';
+import { VipService } from './vips.service';
+import { SourceMapGenerator } from '@angular/compiler/src/output/source_map';
 
 @Component({
   selector: 'app-vips',

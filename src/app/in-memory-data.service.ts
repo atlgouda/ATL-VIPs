@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
+// import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
-import { Vip } from './vip';
+import { Vip } from './vips/vip';
 
-@Injectable({
-  providedIn: 'root',
-})
+// @Injectable({
+//   providedIn: 'root',
+// })
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const vips = [

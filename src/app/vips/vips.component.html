@@ -1,4 +1,3 @@
-
 <div class="page" style="background-color: #CCCCCC; padding-top: 20px">
     <div class="addDiv">
         <h4 style="text-align: center">Add VIP</h4>
@@ -24,7 +23,7 @@
             vipName.value=''; vipType.value='topps61'; vipDetail.value=''; vipReason.value=''; vipYt.value=''">Add VIP</button>
         </div>
     </div>
-    <div class="vipList" style="background-color: #CCCCCC; display: flex;padding-top: 20px; border-rad; margin: 0 auto;">
+    <div class="vipList" style="background-color: #CCCCCC; display: flex; padding-top: 20px; margin: 0 auto;">
         <ul class="vips" style="height: 100%;max-width: 400px; width: 60vw; margin-left: auto; margin-right: auto; background-color:#CCCCCC; flex-direction: column; display: flex;">
         <li *ngFor="let vip of vips" style="max-width: 400px">
             <a routerLink="/detail/{{vip.id}}">

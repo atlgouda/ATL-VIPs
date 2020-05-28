@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Vip } from './vip';
 // import { VIPS } from './mock-vips';
-import { Observable, of } from 'rxjs'
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs'
+import { catchError } from 'rxjs/operators';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +16,9 @@ export class VipService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
   
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient
+    ) { }
   getVips(): Observable<Vip[]> {
     return this.http.get<Vip[]>(this.vipsUrl);
   }
@@ -28,4 +32,3 @@ export class VipService {
   }
 
 }
-

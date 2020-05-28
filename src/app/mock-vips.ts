@@ -1,4 +1,4 @@
-import { Vip } from './vip';
+import { Vip } from './vips/vip';
 
 export const VIPS: Vip[] = [
     { 
