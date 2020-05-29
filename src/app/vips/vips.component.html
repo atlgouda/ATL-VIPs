@@ -29,6 +29,8 @@
             <a routerLink="/detail/{{vip.id}}">
                 <span class="badge">{{vip.id}}</span> {{vip.name}}
             </a>
+            <button class="delete" title="delete vip"
+            (click)="delete(vip)">x</button>
         </li>
         </ul>
     </div>

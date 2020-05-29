@@ -30,5 +30,10 @@ export class VipService {
   addVip(vip: Vip): Observable<Vip> {
     return this.http.post<Vip>(this.vipsUrl, vip, this.httpOptions)
   }
+  /** DELETE: delete the hero from the server */
+  deleteVip (id: number): Observable<{}> {
+    const url = `${this.vipsUrl}/${id}`; // DELETE api/heroes/42
+    return this.http.delete(url, httpOptions)
+  }
 
 }

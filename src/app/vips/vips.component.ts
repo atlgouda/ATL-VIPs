@@ -31,10 +31,18 @@ export class VipsComponent implements OnInit {
     reason = reason.trim();
     yt = yt.trim();
     if (!name) { return; }
-    this.vipService.addVip({ name, type, detail, reason, yt } as Vip)
+    const newVip: Vip = { name, type, detail, reason, yt } as Vip;
+    this.vipService
+      .addVip(newVip as Vip)
       .subscribe(vip => {
         this.vips.push(vip);
       });
 
+  }
+  delete(vip: Vip): void {
+    this.vips = this.vips.filter(v => v !== vip);
+    this.vipsService
+      .deleteHero(vip.id)
+      .subscribe();
   }
 }

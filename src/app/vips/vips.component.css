@@ -56,3 +56,15 @@
       font-family: Arial, Helvetica, sans-serif !important;
       text-align: center;
   }
+
+  button.delete {
+    position: relative;
+    left: 24em;
+    top: -32px;
+    background-color: gray !important;
+    color: white;
+    display: inherit;
+    padding: 5px 8px;
+    width: 2em;
+  }
+  
