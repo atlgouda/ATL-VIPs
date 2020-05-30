@@ -11,6 +11,7 @@ import { SourceMapGenerator } from '@angular/compiler/src/output/source_map';
 export class VipsComponent implements OnInit {
 
   vips: Vip[];
+  editVip: Vip //the vip currently being edited
 
   selectedVip: Vip;
 
@@ -39,10 +40,33 @@ export class VipsComponent implements OnInit {
       });
 
   }
+
   delete(vip: Vip): void {
     this.vips = this.vips.filter(v => v !== vip);
-    this.vipsService
-      .deleteHero(vip.id)
-      .subscribe();
+    this.vipService
+      .deleteVip(vip.id)
+      .subscribe(
+        () => console.log(`Vip with id = ${vip.id} deleted`),
+        (err) => console.log(err)
+      );
+  }
+
+  edit(vip: Vip) {
+    this.editVip = vip;
+  }
+
+  update() {
+    if (this.editVip) {
+      this.vipService
+        .updateVip(this.editVip)
+        .subscribe(vip => {
+        // replace the vip in the vips list with update from server
+        const ix = vip ? this.vips.findIndex(v => v.id === vip.id) : -1;
+        if (ix > -1) {
+          this.vips[ix] = vip;
+        }
+      });
+      this.editVip = undefined;
+    }
   }
 }

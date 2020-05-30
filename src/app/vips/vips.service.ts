@@ -30,10 +30,15 @@ export class VipService {
   addVip(vip: Vip): Observable<Vip> {
     return this.http.post<Vip>(this.vipsUrl, vip, this.httpOptions)
   }
-  /** DELETE: delete the hero from the server */
+  /** DELETE: delete the vip from the server */
   deleteVip (id: number): Observable<{}> {
-    const url = `${this.vipsUrl}/${id}`; // DELETE api/heroes/42
-    return this.http.delete(url, httpOptions)
+    // const url = `${this.vipsUrl}/${id}`; // DELETE api/vips/42
+    // return this.http.delete(url, httpOptions)
+    return this.http.delete<Vip>(`${this.vipsUrl}/${id}`)
+  }
+  /** PUT: update the vip on the server. Returns the updated vip upon success. */
+  updateVip (vip: Vip): Observable<Vip> {
+    return this.http.put<Vip>(this.vipsUrl, vip, this.httpOptions)
   }
 
 }

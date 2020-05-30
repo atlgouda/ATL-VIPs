@@ -1,10 +1,8 @@
-import { Vip } from './vips/vip';
-
-export const VIPS: Vip[] = [
+[
     { 
       "id": 1, 
       "name": "Gouda Clark", 
-      "occupation": "business", 
+      "occupation": "", 
       "type": "topps61",
       "detail": "Atlanta",
       "born": 1984,
@@ -126,7 +124,7 @@ export const VIPS: Vip[] = [
       "detail": "R&B Girl Group",
       "born": 1971,
       "reason": "Nine Top 10 Hits",
-      "yt": "https://i.ytimg.com/vi/M_o_lSiNAtI/hqdefault.jpg",
+      "yt": "https://i.ytimg.com/vi/M_o_lSiNAtI/hqdefault.jpg"
   },
   {
       "id": 14,
@@ -136,7 +134,7 @@ export const VIPS: Vip[] = [
       "detail": "King of the South",
       "born": 1980,
       "reason": "7 Billboard Top 5 Albums",
-      "yt": "https://upload.wikimedia.org/wikipedia/en/1/10/King_%28album%29.jpg",
+      "yt": "https://upload.wikimedia.org/wikipedia/en/1/10/King_%28album%29.jpg"
   },
   {
       "id": 15,
@@ -146,7 +144,7 @@ export const VIPS: Vip[] = [
       "detail": "Rapper / Actor",
       "born": 1977,
       "reason": "3 Grammy Awards",
-      "yt": "https://media.giphy.com/media/CsEIm9vZaUWiY/giphy.gif",
+      "yt": "https://media.giphy.com/media/CsEIm9vZaUWiY/giphy.gif"
   },
   {
       "id": 16,
@@ -156,7 +154,7 @@ export const VIPS: Vip[] = [
       "detail": "R&B Singer",
       "born": 1978,
       "reason": "80 million records sold",
-      "yt": "https://media.giphy.com/media/v8Lvu6LloqmR2/giphy.gif",
+      "yt": "https://media.giphy.com/media/v8Lvu6LloqmR2/giphy.gif"
   },
   {
       "id": 17,
@@ -166,7 +164,7 @@ export const VIPS: Vip[] = [
       "detail": "Actress",
       "born": 1967,
       "reason": "Oscar for Best Actress",
-      "yt": "https://media.giphy.com/media/2Z7WbDrluPJL2/giphy.gif",
+      "yt": "https://media.giphy.com/media/2Z7WbDrluPJL2/giphy.gif"
   },
   {
       "id": 18,
@@ -176,7 +174,7 @@ export const VIPS: Vip[] = [
       "detail": "Actor / Rapper",
       "born": 1983,
       "reason": "Childish Gambino",
-      "yt": "https://media.giphy.com/media/lYf4uAJEWVo1FffnVD/giphy.gif",
+      "yt": "https://media.giphy.com/media/lYf4uAJEWVo1FffnVD/giphy.gif"
   },
   {
       "id": 19,
@@ -186,7 +184,7 @@ export const VIPS: Vip[] = [
       "detail": "Actor / Businessman",
       "born": 1969,
       "reason": "Tyler Perry Studios",
-      "yt": "https://media.giphy.com/media/kFNaLHtn88ozrws6Le/giphy.gif",
+      "yt": "https://media.giphy.com/media/kFNaLHtn88ozrws6Le/giphy.gif"
   },
   {
       "id": 20,
@@ -196,7 +194,7 @@ export const VIPS: Vip[] = [
       "detail": "Founder",
       "born": 1938,
       "reason": "Turner Broadcasting",
-      "yt": "https://img.buzzfeed.com/buzzfeed-static/static/2014-05/enhanced/webdr07/6/12/anigif_original-grid-image-685-1399394335-1.gif?crop=605:299;0,10&downsize=600:*&output-format=auto&output-quality=auto",
+      "yt": "https://img.buzzfeed.com/buzzfeed-static/static/2014-05/enhanced/webdr07/6/12/anigif_original-grid-image-685-1399394335-1.gif?crop=605:299;0,10&downsize=600:*&output-format=auto&output-quality=auto"
   },
   {
       "id": 21,
@@ -206,6 +204,6 @@ export const VIPS: Vip[] = [
       "detail": "Cofounder",
       "born": 1942,
       "reason": "Home Depot",
-      "yt": "https://media.giphy.com/media/jOVSkMmdvufGihdZw1/giphy-downsized-large.gif",
+      "yt": "https://media.giphy.com/media/jOVSkMmdvufGihdZw1/giphy-downsized-large.gif"
   }
 ]

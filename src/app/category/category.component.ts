@@ -3,7 +3,7 @@ import { Vip } from '../vips/vip';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { VipService }  from '../vips/vips.service';
-import { VIPS } from '../mock-vips'
+import vipdata from 'src/assets/vips.json'
 
 @Component({
   selector: 'app-category',
@@ -20,12 +20,10 @@ export class CategoryComponent implements OnInit {
     private location: Location
     ) { 
       const id: string = route.snapshot.params.id;
-      console.log('ID');
       console.log(id);
-      var catArray = VIPS.filter(function (vip) {
+      var catArray = vipdata.filter(function (vip) {
         return vip.occupation.includes(id) === true
       });
-      console.log('catArray');
       console.log(catArray);
       this.vipService.getVips()
         .subscribe(vips => this.vips = catArray);
