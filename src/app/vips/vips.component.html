@@ -8,7 +8,9 @@
             <select style="display: none;">
                 <option #vipType value="topps61">topps61</option>
             </select>
-
+        <label>Occupation Category:
+            <input #vipOccupation />
+        </label><br>
         <label>Team or Profession:
                 <input #vipDetail />
         </label><br>
@@ -19,8 +21,8 @@
                 <input #vipYt />
         </label>
         <div style="display: flex; justify-content: center; margin-top: 5px">
-            <button id="addBtn" style="background-color: #cccccc; border-radius: 8px; padding: 5px 10px" role="button" class="btn btn-success"(click)="add(vipName.value, vipType.value, vipDetail.value, vipReason.value, vipYt.value); 
-            vipName.value=''; vipType.value='topps61'; vipDetail.value=''; vipReason.value=''; vipYt.value=''">Add VIP</button>
+            <button id="addBtn" style="background-color: #cccccc; border-radius: 8px; padding: 5px 10px" role="button" class="btn btn-success"(click)="add(vipName.value, vipType.value, vipOccupation.value, vipDetail.value, vipReason.value, vipYt.value); 
+            vipName.value=''; vipType.value='topps61'; vipDetail.value=''; vipOccupation.value=''; vipReason.value=''; vipYt.value=''">Add VIP</button>
         </div>
     </div>
     <div class="vipList" style="background-color: #CCCCCC; display: flex; padding-top: 20px; margin: 0 auto;">

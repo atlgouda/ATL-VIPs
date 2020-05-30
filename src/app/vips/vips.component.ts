@@ -25,14 +25,15 @@ export class VipsComponent implements OnInit {
     this.vipService.getVips()
       .subscribe(vips => this.vips = vips);
   }
-  add(name: string, type: string, detail: string, reason: string, yt:string): void {
+  add(name: string, type: string, occupation: string, detail: string, reason: string, yt:string): void {
     name = name.trim();
     type = type.trim();
+    occupation = occupation.trim();
     detail = detail.trim();
     reason = reason.trim();
     yt = yt.trim();
     if (!name) { return; }
-    const newVip: Vip = { name, type, detail, reason, yt } as Vip;
+    const newVip: Vip = { name, type, occupation, detail, reason, yt } as Vip;
     this.vipService
       .addVip(newVip as Vip)
       .subscribe(vip => {
