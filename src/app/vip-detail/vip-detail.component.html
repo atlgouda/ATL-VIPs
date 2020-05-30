@@ -6,4 +6,14 @@
         <div class="name">{{vip?.name}}<BR><span style="color:yellow;font-size:10px;line-height:10px;">{{vip?.reason}}</span></div>
         <div class="name2">{{vip?.detail}}</div>
     </div>
+    <div>
+        <label>name:
+            <input [(ngModel)]="vip.name" placeholder={{vip?.name}} />
+        </label>
+        <label>detail:
+                <input [(ngModel)]="vip.detail" placeholder={{vip?.detail}} />
+            </label>
+    </div>
+
 </div>
+

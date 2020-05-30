@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Vip } from './vip';
-// import { VIPS } from './mock-vips';
 import { Observable } from 'rxjs'
 import { catchError } from 'rxjs/operators';
 import { HttpClient, HttpParams } from '@angular/common/http';

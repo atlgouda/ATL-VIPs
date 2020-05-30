@@ -6,20 +6,14 @@ import { VipService }  from '../vips/vips.service';
 import { catchError, map, tap } from 'rxjs/operators';
 
 
-function test(t) {      //defining a function
-  if (t === undefined) {       //if t=undefined, call tt
-        console.log(t)      //call t
-  }
-  return t;    
-}
-
 @Component({
   selector: 'app-vip-detail',
   templateUrl: './vip-detail.component.html',
   styleUrls: ['./vip-detail.component.css']
 })
 export class VipDetailComponent implements OnInit {
-  vip: Vip;
+  // added @Input()
+  @Input() vip: Vip;
 
   constructor(
     private route: ActivatedRoute,
@@ -36,7 +30,13 @@ export class VipDetailComponent implements OnInit {
     console.log(id)
     this.vipService.getVip(id)
       .subscribe(vip => this.vip = vip);
-    // console.log(test(vip))
+  }
+  goback(): void {
+    this.location.back()
+  }
+  save(): void {
+    this.vipService.updateVip(this.vip)
+      .subscribe(() => this.goback());
   }
   
 

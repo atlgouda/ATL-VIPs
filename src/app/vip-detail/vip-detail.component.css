@@ -112,7 +112,14 @@ body {
     opacity:.5;
   }
   
-
+#editBtn {
+  padding: 5px 10px;
+  background-color: #eeeeee;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #334953
+}
 
   /* topps 61 */
   
